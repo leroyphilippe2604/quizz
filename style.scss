@@ -10,7 +10,7 @@
 body {
   background: purple;
 }
-
+/* rules */
 .info_box {
   position: absolute;
   display: flex;
@@ -67,7 +67,7 @@ body {
     font-weight: 500;
     cursor: pointer;
   }
-  .restart {
+  .start {
     color: white;
     border-color: #ef6f04;
     background: #ef6f04;
@@ -75,7 +75,7 @@ body {
     transition: all 1s ease;
   }
 
-  .restart:hover {
+  .start:hover {
     border-color: purple;
     background: purple;
   }
@@ -91,9 +91,12 @@ body {
     background: red;
   }
 }
+/* fin des rules */
 
+/* bouton theme */
 .start_btn {
   position: absolute;
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -109,9 +112,11 @@ body {
     cursor: pointer;
   }
 }
+/* fin du bouton theme */
 
+/* theme */
 .theme {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-start;
 
@@ -138,5 +143,35 @@ body {
   }
   button:hover {
     color: purple;
+  }
+}
+
+/*fin du theme 
+
+/* timer */
+.base-timer {
+  position: relative;
+  height: 300px;
+  width: 300px;
+
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+
+    .base-timer__path-elapsed {
+      stroke-width: 7px;
+      stroke: #ef6f04;
+
+      .base-timer__label {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+      }
+    }
   }
 }
