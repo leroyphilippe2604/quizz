@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: purple;
+}
+
+.info_box {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 900px;
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.info_box .info_title {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+.info_box .info_list {
+  padding: 15px 35px;
+}
+
+.info_box .info_list .info {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.info_box .info_list .info span {
+  font-weight: 600;
+  color: red;
+}
+
+.info_box .buttons {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid black;
+}
+
+.info_box button {
+  margin: 0 5px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.info_box .restart {
+  color: white;
+  border-color: #ef6f04;
+  background: #ef6f04;
+  font-size: 18px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.info_box .restart:hover {
+  border-color: purple;
+  background: purple;
+}
+
+.info_box .quit {
+  color: red;
+  border-color: red;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 18px;
+}
+
+.info_box .quit:hover {
+  color: white;
+  background: red;
+}
+
+.start_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.start_btn button {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #ef6f04;
+  cursor: pointer;
+}
+
+.theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.theme .option_theme {
+  padding: 4rem;
+}
+
+.theme button {
+  background: #ef6f04;
+  font-size: 25px;
+  font-weight: 50px;
+  color: white;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  height: 70px;
+  width: 300px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.theme button:hover {
+  color: purple;
+}
